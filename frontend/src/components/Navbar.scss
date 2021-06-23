@@ -1,0 +1,95 @@
+@import '../assets/sass/variables';
+.nav{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    background-color: $navbar-color;
+    width: 100%;
+    color: $white;
+
+    &--header{
+        font-size:2rem;
+        font-family: 'Rubik',sans-serif;
+        padding: 1.5rem;
+        width: 100%;
+        color: $white;
+        text-decoration: none;
+        font-weight:600;
+
+        @media only screen and (max-width:800px){
+            font-size:1.3rem;
+            font-family: 'Rubik',sans-serif;
+            width:100%;
+        }
+        @media only screen and (max-width:250px){
+            font-size:1rem;
+            font-family: 'Rubik',sans-serif;
+            margin-right: 0.5rem;
+        }
+    }
+    &--guest-links,
+    &--auth-links{
+        display: flex;
+        flex-flow:row;
+        align-items:center;
+        justify-content: space-evenly;
+        a{
+            letter-spacing: .08rem;
+            text-decoration:none;
+            color: $white;
+            margin-right: 1.9rem;
+            font-size:1.4rem;
+            font-family:'Raleway', sans-serif;
+            transition: all ease 0.3s;
+        }
+        a:hover{
+            font-size: 1.6rem;
+            letter-spacing: 0.05rem;
+            font-weight: 700;
+        }
+        @media only screen and (max-width:250px){
+           
+        }
+    }
+    @media only screen and (max-width:800px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &--header{
+                font-size:1.3rem;
+                margin-right: 0;
+            }
+
+            &--guest-links,
+            &--auth-links{
+                a{
+                    margin-right:1.4rem;
+                    font-size:0.9rem
+                }
+                a:hover{
+                    margin-right:1rem;
+                    font-size:1rem
+                }
+            }
+        
+    }
+    @media only screen and (max-width: 250px){
+        width:100%;
+        &--header{
+            width: 100%;
+            font-size:1rem;
+            font-family: 'Rubik',sans-serif;
+        }
+        &--guest-links,
+        &--auth-links{
+            a{
+                font-size:0.7rem
+            }
+            a:hover{
+                margin-right:13px;
+                font-size:0.7rem
+            }
+        }
+    }
+}

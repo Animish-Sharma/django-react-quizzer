@@ -1,0 +1,109 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    align-items:center;
+    h1{
+        font-size:3.5rem;
+        font-family: 'Raleway',sans-serif;
+        font-weight:100;
+        margin: 5px 0 5px 0;
+    }
+    &--content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-image{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 50%;
+                height: auto;
+                border-radius:12px;
+            }
+        }
+        
+        &-table{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            table{
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+            table, th, td {
+                border: .01rem solid black;
+                border-radius: 20%;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 24px;
+                padding: 10px;
+                font-weight: 600;
+                font-family: "Roboto",sans-serif;
+            }
+        }
+    }
+
+    @media only screen and (max-width:760px){
+        h1{
+            text-align: left;
+            font-size: 2.5rem;
+        }
+        &--content{
+            &-image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 70%;
+                    height: auto;
+                }
+            }
+            &-table{
+                table{
+                    width: 90%;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+                table, th, td {
+                    text-align: center;
+                    font-size: 15px;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:300px){
+        h1{
+            text-align: left;
+            font-size: 1.5rem;
+        }
+        &--content{
+            &-image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 70%;
+                    height: auto;
+                }
+            }
+            &-table{
+                width: 50%;
+                table{
+                    width: 90%;
+                    height: auto;
+                }
+                table, th, td {
+                    text-align: center;
+                    font-size: 12px;
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}

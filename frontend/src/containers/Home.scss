@@ -1,0 +1,171 @@
+@import '../assets/sass/variables';
+
+
+.home{
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+
+    &--guest{
+        background-color: #fff;
+        max-width: 100%;
+        color: $black;
+        width: 35rem;
+        height:23rem;
+        padding:1rem;
+        border-radius: 15px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top:70px;
+        h1{
+            font-size: 3rem;
+            font-family: 'Titillium Web',sans-serif;
+            font-weight:100;
+        }
+        p{
+            font-size:1.3rem;
+        }
+        
+        &-links{
+            display: flex;
+            flex-flow:row wrap;
+            justify-content:space-evenly;
+            &-login,
+            &-register{
+                border: 1px solid #122c91;
+                margin-right: 2rem;
+                border-radius: 7px;
+                padding:1rem;
+                width: 90px;
+                text-align:center;
+                color: #122c91;
+                text-decoration: none;
+                font-size: 1.3rem;
+                transition: all ease 0.2s;
+                &:hover{
+                    background-color: #122c91;
+                    color: #fff;
+                }
+            }
+            &-register{
+                border: 1px solid #fe5e50;
+                color: #fe5e50;
+                transition:all ease .2s;
+                
+                &:hover{
+                    background-color: #fe5e50;
+                    color: #fff;
+                }
+            }
+
+        }
+        @media only screen and (max-width:750px){
+            width: 80%;
+            height:auto;
+            padding:1.1rem;
+            border-radius: 15px;
+            h1{
+                font-size:2rem
+            }
+            p{
+                font-size:1rem
+            }
+            &-links{
+                display:flex;
+                flex-direction:column;
+                justify-content:space-between;
+                &-login,&-register{
+                    width: 75%;
+                    font-size:1.2rem;
+                    margin-bottom:20px;
+                }
+            }
+        }
+    }
+    &--auth{
+        display: flex;
+        flex-direction:column;
+        margin-top: 3%;
+        align-items:center;
+        box-sizing: border-box;
+        width:35rem;
+        background-color: #fff;
+        color: #000;
+        padding: 20px;
+        border-radius: 10px;
+        img{
+            width:23rem;
+            height: auto;
+        }
+
+        &-links{
+            display: flex;
+            flex-flow:row wrap;
+            justify-content:space-evenly;
+            &-test,
+            &-profile{
+                border: 1px solid #122c91;
+                margin-right: 2rem;
+                border-radius: 7px;
+                padding:1rem;
+                width: 90px;
+                text-align:center;
+                color: #122c91;
+                text-decoration: none;
+                font-size: 1.1rem;
+                transition: all ease 0.2s;
+                &:hover{
+                    background-color: #122c91;
+                    color: #fff;
+                    font-weight: 900;
+                    letter-spacing: .028rem;
+                }
+            }
+            &-profile{
+                border: 1px solid #272643;
+                color: #272643;
+                &:hover{
+                    background-color: #272643;
+                    color: #fff;
+                }
+            }
+        }
+        @media only screen and (max-width:800px){
+            width:75%;
+            height: auto;
+            padding: 10px;
+            border-radius: 15px;
+            margin-top: 15%;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                width:90%;
+                height: auto;
+            }
+            h1{
+                font-size: 1.1rem;
+            }
+            p{
+                font-size: .8rem;
+            }
+            &-links{
+                display: flex;
+                flex-direction:column;
+                justify-content: space-around;
+                &-test,&profile{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.message{
+    text-align: center;
+    width: 80%;
+    margin: 0;
+}

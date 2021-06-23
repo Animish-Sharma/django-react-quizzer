@@ -1,0 +1,60 @@
+@import "../../assets/sass/variables";
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    &--sidebar{
+        display: flex;
+        width: 80%;
+        height: 20rem;
+        flex: 0.25;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 19px;
+
+        button{
+            box-shadow: 0px 0px black;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: transparent;
+            outline: none;
+            border: 1px #e1e1e1 solid;
+            cursor: pointer;
+            transition: all ease .4s;
+            margin-left: 10px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+            &:active{
+                background-color: #e1e1e1;
+            }
+        }
+        .active{
+            border: 1.5px #BBBFCA solid;
+            border-right-color: white;
+            border-top-color: white;
+            box-shadow: 3px 10px 5px #e1e1e1;
+            background-color: #f6f5f5;
+            clear: both;
+            text-overflow: ellipsis;
+            color: $home-color;
+        }
+    }
+
+    &--content{
+        display: flex;
+        flex-direction: column;
+        flex: 0.75;
+        align-items: center;
+    }
+
+    @media only screen and (max-width:768px){
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        &--sidebar{
+            width: 90%;
+        }
+    }
+}

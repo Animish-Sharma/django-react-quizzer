@@ -1,0 +1,198 @@
+
+.test{
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-align: center;
+        color: #fff;
+        font-size: 3rem;
+        margin: 10px 0 10px 0;
+        font-weight: 100;
+        font-family: "Rubik",sans-serif;
+    }
+    h5{
+        text-align: center;
+        color: #fff;
+        font-size: 1rem;
+        font-family: 'Rubik',sans-serif;
+        margin: 0;
+    }
+    p{
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        font-size: 1rem;
+        font-family: "Inter",sans-serif;
+    }
+    &--content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &-card{
+                background-color: #fff;
+                margin-bottom: 10px;
+                margin-top: 20px;
+                width: 35rem;
+                padding: 30px;
+                border-radius: 10px;
+                margin-left: 30px;
+
+                .image{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    
+                }
+                h2{
+                    font-size: 2rem;
+                    font-family: "Rubik",sans-serif;
+                    font-weight:900;
+                    text-align: center;
+                }
+                h4{
+                    font-size: 1.25rem;
+                    font-family:"Raleway",sans-serif;
+                }
+                form{
+                    div{
+                        input{
+                            appearance: none;
+                            border: 2px solid #272643;
+                            width: 20px;
+                            height: 20px;
+                            margin: 0 .7rem .9rem 0;
+                            position: relative;
+                            border-radius: 50%;
+                            margin: 0 1rem 0 0 ;
+                            
+                            cursor: pointer;
+                            transition: all ease .12s;
+                            &:checked{
+                                border: 8.4px solid #272643;
+                            }
+                        }
+                        label{
+                            font-size: 20px;
+                            margin-bottom: 1rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            width: 25%;
+            height: 90px;
+            margin-bottom: 50px;
+            margin-top:20px;
+            border-radius: 10px;
+            border: 3px solid #072448;
+            color: #072448;
+            background-color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            transition: all ease .3s;
+            font-family: "Roboto",sans-serif;
+            font-weight: 100;
+            &:hover{
+                color: #fff;
+                background-color: #072448;
+                font-weight:800;
+            }
+        }
+        .alertMessageTest{
+            width: 40%;
+        }
+    }
+
+    @media only screen and (max-width: 800px){
+        h1{
+            font-size: 2rem;
+        }
+
+        &--content{
+            &-row{
+                flex-direction: column;
+                &-card{
+                    width: 80%;
+                    margin-left: 1%;
+                    margin-top:10px;
+                    padding: 10px;
+                    
+                    .image{
+                        img{
+                            width: 70%;
+                            height: auto;
+                        }
+                    }
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                    h4{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            button{
+                width: 50%;
+                height: 60px;
+                font-size: 20px;
+                border: 2px solid #072448;
+            }
+        }
+    }
+    @media only screen and (max-width: 1152px){
+        h1{
+            font-size: 2rem;
+        }
+
+        &--content{
+            &-row{
+                flex-direction: column;
+                &-card{
+                    width: 90%;
+                    margin-left: 4%;
+                    margin-top:10px;
+                    padding: 13px;
+                    
+                    .image{
+                        img{
+                            width: 70%;
+                            height: auto;
+                        }
+                    }
+                    h2{
+                        font-size: 3rem;
+                    }
+                    h4{
+                        font-size: 1.9rem;
+                    }
+                    form{
+                        div{
+                            input{
+                                width: 30px;
+                                height: 30px;
+                                &:checked{
+                                    border: 11px solid #272643;
+                                }
+                            }
+                            label{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            button{
+                width: 70%;
+                height: 60px;
+                font-size: 20px;
+                border: 2px solid #072448;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.alert-success,.alert-message,.alert-error{
+    color: #4dff4d;
+    border: 2px solid #4dff4d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    width: 90%;
+    font-family: 'Rajdhani',sans-serif;
+    font-weight:600;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 6.6s;
+
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0.1;
+        }
+        15% {
+            opacity: 1;
+        }
+        100%{
+            opacity:0;
+        }
+    }
+}
+
+.alert-message{
+    color: #f7a325;
+    border: 2px solid #f7a325;
+}
+
+.alert-error{
+    color: #ff4d4d;
+    border: 2px solid #ff4d4d;
+}
+.alert{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:850px){
+    .alert{
+        font-size: 1rem;
+        width: 80%;
+    }
+}

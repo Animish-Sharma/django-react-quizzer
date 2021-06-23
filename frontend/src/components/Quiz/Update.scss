@@ -1,0 +1,134 @@
+.update{
+    display: flex;
+    flex-direction: column;
+    h1{
+        font-size: 2.3rem;
+        font-family: "Rubik",sans-serif;
+        font-weight:100;
+        text-align: center;
+        margin:10px 0;
+    }
+    p{
+        font-size:1.1rem;
+        font-family: "Inter",sans-serif;
+        margin: 10px 35px;
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        input{
+            width: 75%;
+            margin-left:50px;
+            font-family: "Rubik",sans-serif;
+            height:35px;
+            font-size:20px;
+            margin-bottom: 15px;
+        }
+        input[type=text],input[type=password]{
+            
+            font-family: "Rubik",sans-serif;
+            font-weight: 900;
+            border: 2px black solid;
+            border-radius:7px;
+            outline: none;
+        }
+        .image-div{
+            display: inline;
+            label{
+                font-size:1.5rem;
+                margin-left: 3rem;
+                font-family: "Roboto",sans-serif;
+                font-weight:100;
+            }
+            input{
+                margin-left: 10px;
+            }
+        }
+        .checkbox-div{
+            display: inline;
+            margin-bottom: 10px;
+            label{
+                font-size:1.1rem;
+                margin:0;
+                font-family: "Roboto",sans-serif;
+                font-weight:100;
+            }
+            input[type=checkbox]{
+                height: 17px;
+                position: absolute;
+                right: 16rem;
+            }
+        }
+        button{
+            width: 20%;
+            margin-left:30px;
+            height: 40px;
+            background-color: #fff;
+            border: 2px solid #1E6F5C;
+            font-size:25px;
+            color: #1E6F5C;
+            border-radius:5px;
+            font-family: "Roboto",sans-serif;
+            font-weight:100;
+            outline: none;
+            transition: all ease .3s;
+            cursor: pointer;
+            margin-bottom: 10px;
+
+            &:hover{
+                background-color: #1E6F5C;
+                color: #fff;
+                font-weight: 700;
+                font-family: "Rubik",sans-serif;
+            }
+        }
+    }
+    @media only screen and (max-width:800px){
+        h1{
+            font-size: 2rem;
+        }
+        form{
+            input{
+                width: 80%;
+                margin-left: 20px;
+            }
+            .image-div{
+                display: inline;
+                label{
+                    font-size:1.1rem;
+                    margin-left: 3rem;
+                    font-family: "Roboto",sans-serif;
+                    font-weight:100;
+                }
+                input{
+                    width: 50%;
+                    font-size: 13px;
+                }
+            }
+            .checkbox-div{
+                display: flex;
+                flex-direction: row;
+
+                label{
+                    font-size:1.1rem;
+                    margin:0;
+                    font-family: "Roboto",sans-serif;
+                    font-weight:100;
+                    margin-left:10px;
+                }
+                input[type=checkbox]{
+                    height: 17px;
+                    position: absolute;
+                    left: 3rem;
+                }
+            }
+            button{
+                width: 50%;
+                margin-bottom: 30px;
+                height: 50px;
+            }
+        }
+    }
+}

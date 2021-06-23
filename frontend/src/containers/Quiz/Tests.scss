@@ -1,0 +1,180 @@
+.tests{
+    color: #fff;
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing:.1rem;
+        margin-top: 10px;
+    }
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Rubik',sans-serif;
+    }
+    &--row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        &-card{
+            background-color: #fff;
+            color: #000;
+            width: 22rem;
+            height: auto;
+            margin-left: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            h2{
+                text-align: center;
+                font-family: "Roboto",sans-serif;
+                font-size: 1.8rem;
+            }
+            h4{
+                text-align: center;
+                font-family: "Raleway",sans-serif;
+                font-size: 1.3rem;
+            }
+            h5{
+                text-align: center;
+                font-family: "Rubik",sans-serif;
+                font-size: 1.1rem;
+            }
+            button{
+                background-color: #fff;
+                border: 3px #5f59f7 solid;
+                width: 50%;
+                height: 40px;
+                font-size: 1.5rem;
+                font-family: "Rajdhani",sans-serif;
+                font-weight:900;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all ease .3s;
+                position: relative;
+                outline: none;
+                left: 21%;
+
+                &:hover{
+                    background-color: #5f59f7;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &--navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        button{
+            background-color: transparent;
+            margin-top: 10px;
+            border:2px solid #ff8f66;
+            width: 12.5%;
+            height: 45px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #ff8f66;
+            font-weight: 600;
+            font-size: 1.3rem;
+            transition: all ease .3s;
+            font-family: "Roboto",sans-serif;
+            text-transform: uppercase;
+            margin-left: 10px;
+            &:hover{
+                color: #fff;
+                background-color: #ff8f66;
+                font-weight: 900;
+            }
+            &:nth-child(1){
+                border: 2px solid white;
+                color: white;
+                transition: all ease .3s;
+                &:hover{
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:1180px){
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    &--row{
+        
+        &-card{
+                margin-left: 25px;
+                padding: 10px;
+                width: 17rem;
+                h2{
+                    font-size: 1.5rem;
+                }
+                h4{
+                    font-size: 1.2rem;
+                }
+                h5{
+                    font-size: 1rem;
+                }
+                button{
+                    width: 60%;
+                    height: 40px;
+                    font-size: 1.2rem;
+                }
+            }   
+        }
+        &--navigation{
+            button{
+                width: 20%;
+            }
+        }
+    }
+    @media only screen and (max-width:768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    &--row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-card{
+            margin-bottom: 10px;
+            margin-left: 0;
+            width: 100%;
+                h2{
+                    font-family: "Roboto",sans-serif;
+                    font-size: 1.2rem;
+                }
+                h4{
+                    font-family: "Raleway",sans-serif;
+                    font-size: 1rem;
+                }
+                h5{
+                    font-family: "Rubik",sans-serif;
+                    font-size: .9rem;
+                }
+                button{
+                    width: 60%;
+                    height: 40px;
+                    font-size: 1.2rem;
+                }
+            }   
+        }
+
+        &--navigation{
+            button{
+                width: 30%;
+                font-size:.8rem;
+            }
+        }
+    }
+}
