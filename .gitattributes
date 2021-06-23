@@ -1,1 +1,1 @@
-*.rb linguist-language=JavaScript
+*.scss linguist-detectable=false
